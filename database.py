@@ -14,7 +14,7 @@ c = db.cursor()
 user_sql = '''CREATE TABLE IF NOT EXISTS pastebins (
     slug VARCHAR(254) NOT NULL DEFAULT '',
     header VARCHAR(254) NOT NULL DEFAULT '',
-    code LONGBLOB NOT NULL DEFAULT '',
+    code LONGBLOB NOT NULL,
     PRIMARY KEY (slug));
     '''
 
