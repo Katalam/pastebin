@@ -21,7 +21,7 @@ def get_db():
 def index():
     s = request.args.get('s')
     if s is None:
-        return render_template('base.html', new=True)
+        return render_template('base.html')
 
     db = get_db()
     c = db.cursor()
