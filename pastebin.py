@@ -15,7 +15,6 @@ def get_db():
     return db
 
 # c = db.cursor()
-# db.close()
 
 @app.route('/')
 def index():
