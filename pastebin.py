@@ -30,6 +30,7 @@ def index():
                WHERE slug=%(s)s', { 's': s })
     data = c.fetchone()
     if data is None:
+        db.close()
         return render_template('404.html', header='404 Not found')
 
     db.close()
