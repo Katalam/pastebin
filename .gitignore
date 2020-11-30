@@ -2,3 +2,5 @@ __pycache__
 .env
 .vscode
 test.txt
+venv/
+wsgi.py
