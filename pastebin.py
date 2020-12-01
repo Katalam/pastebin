@@ -67,7 +67,7 @@ def page_404(e):
     return render_template('404.html', header='404 Not found'), 404
 
 
-def is_slug_unqiue(s):
+def is_slug_unique(s):
     db = get_db()
     c = db.cursor()
     c.execute('SELECT header, CONVERT(code USING utf8) FROM pastebins \
@@ -76,6 +76,6 @@ def is_slug_unqiue(s):
     db.close()
     return d is None
 
-def unqiue_slug():
+def unique_slug():
     letters = string.ascii_lowercase
     return ''.join(random.choice(letters) for i in range(5))
