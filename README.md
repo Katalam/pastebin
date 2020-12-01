@@ -1,6 +1,6 @@
-# Short url
+# Pastebin
 
-A basic user authentication system
+A basic pastebin
 
 ### Prerequisites
 
