@@ -1,4 +1,27 @@
-h1 {
+h1, .h1 {
     font-family: monospace, monospace;
     padding-left: .3em;
+}
+
+.h1 {
+    margin: 0em 0em 0em 1em;
+}
+
+.text {
+    margin: 1em 0em 0em 1em;
+    width: calc(99% - 1em);
+    height: 300px;
+}
+
+.pasteit, .labelheaderinput {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+.labelheaderinput {
+    margin: 0 0 0 1em;
+}
+
+.empty {
+    margin-top: 1em;
 }

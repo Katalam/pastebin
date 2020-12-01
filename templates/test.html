@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ header }}</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/styles/default.min.css">
     <link class="codestyle" rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.5/styles/github-gist.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <link rel="icon" href="https://file.citylossantos.com/img.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"></script>
 </head>
-
 <body>
-    {% block content %}
-    {% endblock %}
-</body>
+    <div>
+        <div class="empty"></div>
+        <label class="labelheaderinput" for="headerinput">Header: </label>
+        <input id="headerinput" class="h1" type="text">
+        <input type="button" class="pasteit" value="Paste it!">
+    </div>
+    <div>
+        <textarea class="text" id="text" cols="30" rows="10" placeholder="#include &lt;stdio.h&gt;
 
+int main() {
+    // do nothing
+    return 0;
+}"></textarea>
+    </div>
+</body>
 </html>

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="{{ url_for('index') }}" method="post">
+<div>
+    <div class="empty"></div>
+    <label class="labelheaderinput" for="headerinput">Header: </label>
+    <input name="header" id="headerinput" class="h1" type="text">
+    <input type="submit" class="pasteit" value="Paste it!">
+</div>
+<div>
+    
+        <textarea name="text" class="text" id="text" cols="30" rows="10" placeholder="#include &lt;stdio.h&gt;
+
+int main() {
+    // do nothing
+    return 0;
+}"></textarea>
+    
+</div>
+</form>
+{% endblock %}
