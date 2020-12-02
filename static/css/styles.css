@@ -11,6 +11,7 @@ h1, .h1 {
     margin: 1em 0em 0em 1em;
     width: calc(99% - 1em);
     height: 300px;
+    font-family: monospace, monospace;
 }
 
 .pasteit, .labelheaderinput {
